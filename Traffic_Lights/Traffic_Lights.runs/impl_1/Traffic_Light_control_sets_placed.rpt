@@ -1,0 +1,100 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Tue Jul  5 23:38:26 2022
+| Host         : DESKTOP-EHUO157 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Traffic_Light_control_sets_placed.rpt
+| Design       : Traffic_Light
+| Device       : xc7z020
+------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    36 |
+| Unused register locations in slices containing registers |   216 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |           36 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               0 |            0 |
+| No           | No                    | Yes                    |              48 |           24 |
+| No           | Yes                   | No                     |              24 |           12 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------------------+---------------+-----------------------------+------------------+----------------+
+|         Clock Signal         | Enable Signal |       Set/Reset Signal      | Slice Load Count | Bel Load Count |
++------------------------------+---------------+-----------------------------+------------------+----------------+
+|  clk_IBUF_BUFG               |               | light_M1_reg[1]_LDC_i_2_n_0 |                1 |              2 |
+|  clk_IBUF_BUFG               |               | light_M1_reg[2]_LDC_i_1_n_0 |                1 |              2 |
+|  clk_IBUF_BUFG               |               | light_M1_reg[2]_LDC_i_2_n_0 |                1 |              2 |
+|  clk_IBUF_BUFG               |               | light_M1_reg[1]_LDC_i_1_n_0 |                1 |              2 |
+|  clk_IBUF_BUFG               |               | light_M1_reg[0]_LDC_i_2_n_0 |                1 |              2 |
+|  clk_IBUF_BUFG               |               | light_M1_reg[0]_LDC_i_1_n_0 |                1 |              2 |
+|  clk_IBUF_BUFG               |               | light_S_reg[1]_LDC_i_1_n_0  |                1 |              2 |
+|  clk_IBUF_BUFG               |               | light_S_reg[1]_LDC_i_2_n_0  |                1 |              2 |
+|  clk_IBUF_BUFG               |               | light_S_reg[2]_LDC_i_2_n_0  |                1 |              2 |
+|  clk_IBUF_BUFG               |               | light_MT_reg[1]_LDC_i_2_n_0 |                1 |              2 |
+|  clk_IBUF_BUFG               |               | light_M2_reg[0]_LDC_i_1_n_0 |                1 |              2 |
+|  clk_IBUF_BUFG               |               | light_S_reg[0]_LDC_i_2_n_0  |                1 |              2 |
+|  clk_IBUF_BUFG               |               | light_MT_reg[1]_LDC_i_1_n_0 |                1 |              2 |
+|  clk_IBUF_BUFG               |               | light_M2_reg[0]_LDC_i_2_n_0 |                1 |              2 |
+|  clk_IBUF_BUFG               |               | light_MT_reg[2]_LDC_i_2_n_0 |                1 |              2 |
+|  clk_IBUF_BUFG               |               | light_S_reg[2]_LDC_i_1_n_0  |                1 |              2 |
+|  clk_IBUF_BUFG               |               | light_M2_reg[2]_LDC_i_1_n_0 |                1 |              2 |
+|  clk_IBUF_BUFG               |               | light_M2_reg[2]_LDC_i_2_n_0 |                1 |              2 |
+|  clk_IBUF_BUFG               |               | light_MT_reg[0]_LDC_i_2_n_0 |                1 |              2 |
+|  clk_IBUF_BUFG               |               | light_MT_reg[2]_LDC_i_1_n_0 |                1 |              2 |
+|  clk_IBUF_BUFG               |               | light_S_reg[0]_LDC_i_1_n_0  |                1 |              2 |
+|  clk_IBUF_BUFG               |               | light_M2_reg[1]_LDC_i_1_n_0 |                1 |              2 |
+|  clk_IBUF_BUFG               |               | light_M2_reg[1]_LDC_i_2_n_0 |                1 |              2 |
+|  clk_IBUF_BUFG               |               | light_MT_reg[0]_LDC_i_1_n_0 |                1 |              2 |
+|  light_M1_reg[2]_LDC_i_1_n_0 |               | light_M1_reg[2]_LDC_i_2_n_0 |                1 |              2 |
+|  light_M1_reg[1]_LDC_i_1_n_0 |               | light_M1_reg[1]_LDC_i_2_n_0 |                1 |              2 |
+|  light_M1_reg[0]_LDC_i_1_n_0 |               | light_M1_reg[0]_LDC_i_2_n_0 |                1 |              2 |
+|  light_S_reg[1]_LDC_i_1_n_0  |               | light_S_reg[1]_LDC_i_2_n_0  |                1 |              2 |
+|  light_M2_reg[0]_LDC_i_1_n_0 |               | light_M2_reg[0]_LDC_i_2_n_0 |                1 |              2 |
+|  light_MT_reg[1]_LDC_i_1_n_0 |               | light_MT_reg[1]_LDC_i_2_n_0 |                1 |              2 |
+|  light_S_reg[2]_LDC_i_1_n_0  |               | light_S_reg[2]_LDC_i_2_n_0  |                1 |              2 |
+|  light_M2_reg[2]_LDC_i_1_n_0 |               | light_M2_reg[2]_LDC_i_2_n_0 |                1 |              2 |
+|  light_MT_reg[2]_LDC_i_1_n_0 |               | light_MT_reg[2]_LDC_i_2_n_0 |                1 |              2 |
+|  light_S_reg[0]_LDC_i_1_n_0  |               | light_S_reg[0]_LDC_i_2_n_0  |                1 |              2 |
+|  light_M2_reg[1]_LDC_i_1_n_0 |               | light_M2_reg[1]_LDC_i_2_n_0 |                1 |              2 |
+|  light_MT_reg[0]_LDC_i_1_n_0 |               | light_MT_reg[0]_LDC_i_2_n_0 |                1 |              2 |
++------------------------------+---------------+-----------------------------+------------------+----------------+
+
+
