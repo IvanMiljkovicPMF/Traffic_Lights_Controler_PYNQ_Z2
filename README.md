@@ -1,1 +1,1 @@
-# Traffic_Lights_Controler
+# Traffic Lights Controler in VHDL
